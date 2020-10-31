@@ -5,6 +5,12 @@ def addition(a, b):
     b = int(b)
     return a + b
 
+def subtraction(a,b):
+    a = int(a)
+    b = int(b)
+    return b - a
+
+
 
 
 class Calculator:
@@ -12,6 +18,10 @@ class Calculator:
 
     def add(self, a, b):
         self.result = addition(a, b)
+        return self.result
+
+    def sub(self, a, b):
+        self.result = subtraction(a, b)
         return self.result
 
 
