@@ -16,6 +16,12 @@ def multiplication(a, b):
     c = a * b
     return c
 
+def division(a, b):
+    a = int(a)
+    b = int(b)
+    c = b/a
+    return round(c,9)
+
 
 
 
@@ -33,6 +39,13 @@ class Calculator:
     def mul(self, a, b):
         self.result = multiplication(a, b)
         return self.result
+
+    def div(self, a, b):
+        self.result = division(a, b)
+        return self.result
+
+    
+
 
 
 
