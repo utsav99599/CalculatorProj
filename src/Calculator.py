@@ -27,6 +27,11 @@ def square(a):
     c = a*a
     return c
 
+def squareroot(a):
+    a = int(a)
+    return math.sqrt(a)
+
+
 
 
 class Calculator:
@@ -51,6 +56,11 @@ class Calculator:
     def sq(self, a):
         self.result = square(a)
         return self.result
+
+    def sqroot(self, a):
+        self.result = squareroot(a)
+        return self.result
+
 
 
 
